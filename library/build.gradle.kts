@@ -1,4 +1,3 @@
 tasks.register("hello") {
     dependsOn(gradle.includedBuild("common").task(":hello"))
-    dependsOn(gradle.includedBuild("library").task(":hello"))
 }
